@@ -191,7 +191,7 @@ function renderHeader() {
       <div class="mobile-drawer-footer">
         <div class="mobile-drawer-contact">
           <div class="mobile-drawer-contact-title">Direct Greenhouse Support</div>
-          <a href="tel:+18004569872" class="mobile-drawer-phone">📞 +1 (800) 456-XTRA</a>
+          <a href="tel:060851380" class="mobile-drawer-phone">📞 060 851 380</a>
         </div>
         <div class="mobile-drawer-badge">
           🌿 100% Fresh Plants & Climate Packaging
