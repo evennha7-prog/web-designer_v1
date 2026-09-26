@@ -110,4 +110,25 @@
   color: var(--primary-green-dark);
   font-weight: 700;
   font-size: 0.88rem;
+  transition: gap var(--transition-fast);
+}
+
+.blog-card:hover .blog-read-more {
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .blog-hero {
+    padding: 2.75rem 0;
+  }
+  .blog-hero h1 {
+    font-size: 2.2rem;
+  }
+  .blog-grid-section {
+    padding: 3rem 0;
+  }
+  .blog-posts-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
 }

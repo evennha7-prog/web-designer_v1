@@ -114,3 +114,31 @@
 .cat-showcase-card:hover .cat-link-btn {
   gap: 10px;
 }
+
+@media (max-width: 768px) {
+  .category-hero {
+    padding: 2.75rem 0;
+  }
+  .category-hero h1 {
+    font-size: 2.2rem;
+  }
+  .categories-showcase {
+    padding: 3rem 0;
+  }
+  .category-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  .cat-img-box {
+    height: 180px;
+  }
+  .cat-card-content {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
