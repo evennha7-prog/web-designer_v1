@@ -318,8 +318,24 @@ input, select, textarea {
   text-transform: uppercase;
   padding: 0.85rem 1.85rem;
   border-radius: var(--radius-sm);
-  transition: all var(--transition-normal);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Tactile Physical Press on any clickable element */
+button:active,
+.btn:active,
+.action-btn:active,
+.card-action-btn:active,
+.cat-filter-card:active,
+.page-btn:active,
+.grid-btn:active,
+.mobile-toggle:active,
+.mobile-nav-link:active {
+  transform: scale(0.96) !important;
+  transition: transform 0.08s ease !important;
 }
 
 .btn-primary {
@@ -365,14 +381,14 @@ input, select, textarea {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
-  border: 1px solid transparent;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
-  border-color: rgba(34, 197, 94, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px -6px rgba(6, 44, 39, 0.12), 0 6px 14px -2px rgba(6, 44, 39, 0.04);
+  border-color: rgba(34, 197, 94, 0.25);
 }
 
 .product-card-top {
