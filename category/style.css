@@ -1,0 +1,116 @@
+/* Category Page Styles */
+.category-hero {
+  background: linear-gradient(135deg, #f7f9f8 0%, #edf3ef 100%);
+  padding: 3.5rem 0;
+  text-align: center;
+}
+
+.category-hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #062c27;
+  margin-bottom: 0.75rem;
+}
+
+.category-hero p {
+  color: #64748b;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.categories-showcase {
+  padding: 4.5rem 0;
+}
+
+.category-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.cat-showcase-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #eef2f0;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-showcase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+.cat-img-box {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+  background: #f7f9f8;
+}
+
+.cat-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.cat-showcase-card:hover .cat-img-box img {
+  transform: scale(1.08);
+}
+
+.cat-badge-count {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: var(--forest-green);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.cat-card-content {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cat-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #062c27;
+  margin-bottom: 0.5rem;
+}
+
+.cat-desc {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.cat-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--primary-green-dark);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: gap var(--transition-fast);
+}
+
+.cat-showcase-card:hover .cat-link-btn {
+  gap: 10px;
+}

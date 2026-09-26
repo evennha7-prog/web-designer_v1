@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Apsara Flower Shop</title>
+  <meta name="description" content="Get in touch with Apsara Flower Shop for custom botanical arrangements, wedding flowers, wholesale inquiries, or plant care advice.">
+  
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <!-- Site Header (Auto-rendered from components/header.js) -->
+  <header id="site-header" data-active="contact"></header>
+
+  <!-- Hero Header -->
+  <section class="contact-hero">
+    <div class="container">
+      <h1>We’d Love to Hear From You</h1>
+      <p>Have questions about a plant, need custom event florals, or want styling advice? Reach out below.</p>
+    </div>
+  </section>
+
+  <!-- Main Contact Section -->
+  <main class="container contact-section">
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="contact-form-card">
+        <h2 style="font-size: 1.6rem; color: #062c27; margin-bottom: 1.5rem;">Send a Message</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="contact-name">Your Full Name</label>
+            <input type="text" id="contact-name" class="form-input" placeholder="e.g. Jane Doe" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" class="form-input" placeholder="jane@example.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-subject">Topic / Subject</label>
+            <select id="contact-subject" class="form-input">
+              <option value="care">Plant Care Advice</option>
+              <option value="order">Order Status or Delivery</option>
+              <option value="custom">Custom Floral Arrangement</option>
+              <option value="wholesale">Corporate / Office Plants</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-message">Message</label>
+            <textarea id="contact-message" rows="5" class="form-textarea" placeholder="How can our botanists assist you?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Info Panel -->
+      <div class="contact-info-panel">
+        <div class="info-box">
+          <h3>Greenhouse & Studio</h3>
+          <p>428 Botanica Boulevard, Suite 104<br>Green Haven Valley, CA 90210</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Customer Support Hours</h3>
+          <p>
+            Monday – Friday: 8:00 AM – 7:00 PM<br>
+            Saturday – Sunday: 9:00 AM – 5:00 PM<br>
+            Phone: +1 (800) 456-XTRA
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3>Botanist Email Consultations</h3>
+          <p>
+            General Inquiries: hello@apsaraflowershop.com<br>
+            Plant Health Emergency: doctor@apsaraflowershop.com
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Apsara Flower Shop. All rights reserved.</p>
+        <p><a href="../shop/shop.html" style="color: #22c55e;">Explore Plants &rarr;</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../components/header.js"></script>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/shared.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* About Page Styles */
+.about-hero {
+  background: linear-gradient(135deg, #f7f9f8 0%, #edf3ef 100%);
+  padding: 4.5rem 0;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-family: var(--font-serif);
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #062c27;
+  margin-bottom: 1rem;
+}
+
+.about-hero h1 span {
+  color: var(--primary-green);
+  font-style: italic;
+}
+
+.about-hero p {
+  color: #64748b;
+  font-size: 1.2rem;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-story-section {
+  padding: 5rem 0;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.story-img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.story-text h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #062c27;
+  margin-bottom: 1.25rem;
+}
+
+.story-text p {
+  color: #475569;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+}
+
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 3.5rem 2rem;
+  background: #062c27;
+  border-radius: var(--radius-lg);
+  color: #ffffff;
+  text-align: center;
+  margin: 2rem 0 5rem;
+}
+
+.stat-num {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--primary-green);
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category | Apsara Flower Shop</title>
+  <meta name="description" content="Explore plant categories at Apsara Flower Shop - Flowers, Bonsai, Cactus, Succulents, and Rare Foliage.">
+  
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <!-- Site Header (Auto-rendered from components/header.js) -->
+  <header id="site-header" data-active="category"></header>
+
+  <!-- Hero Header -->
+  <section class="category-hero">
+    <div class="container">
+      <h1>Explore Botanical Collections</h1>
+      <p>Discover hand-curated living art organized by species, light needs, and decorative lifestyle suitability.</p>
+    </div>
+  </section>
+
+  <!-- Categories Showcase Cards -->
+  <main class="categories-showcase">
+    <div class="container">
+      <div class="category-cards-grid">
+        <!-- Flower -->
+        <article class="cat-showcase-card">
+          <div class="cat-img-box">
+            <span class="cat-badge-count">5 Plants</span>
+            <img src="../assets/images/rose_hatbox.jpg" alt="Flower Bouquets">
+          </div>
+          <div class="cat-card-content">
+            <h2 class="cat-title">Flowers & Blooms</h2>
+            <p class="cat-desc">Hand-assembled fresh rose hatboxes, seasonal Dutch tulips, orchids, and flowering tropical beauties.</p>
+            <a href="../shop/shop.html?category=flower" class="cat-link-btn">Shop Flowers &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Bonsai -->
+        <article class="cat-showcase-card">
+          <div class="cat-img-box">
+            <span class="cat-badge-count">4 Plants</span>
+            <img src="../assets/images/bonsai.jpg" alt="Japanese Bonsai">
+          </div>
+          <div class="cat-card-content">
+            <h2 class="cat-title">Bonsai & Zen Trees</h2>
+            <p class="cat-desc">Artistically pruned Japanese juniper, ficus, and miniature trees representing peace and mindfulness.</p>
+            <a href="../shop/shop.html?category=bonsai" class="cat-link-btn">Shop Bonsai &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Cactus & Succulents -->
+        <article class="cat-showcase-card">
+          <div class="cat-img-box">
+            <span class="cat-badge-count">4 Plants</span>
+            <img src="../assets/images/angel_wing.jpg" alt="Cactus & Succulents">
+          </div>
+          <div class="cat-card-content">
+            <h2 class="cat-title">Cactus & Succulents</h2>
+            <p class="cat-desc">Resilient Angel's Wing, Aloe Vera, and architectural desert flora that require effortless watering.</p>
+            <a href="../shop/shop.html?category=cactus" class="cat-link-btn">Shop Cactus &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Exclusive -->
+        <article class="cat-showcase-card">
+          <div class="cat-img-box">
+            <span class="cat-badge-count">3 Plants</span>
+            <img src="../assets/images/fiddle_leaf.jpg" alt="Exclusive Rare Plants">
+          </div>
+          <div class="cat-card-content">
+            <h2 class="cat-title">Exclusive & Rare</h2>
+            <p class="cat-desc">High-demand statement plants including mature Fiddle Leaf Figs, cascading orchids, and variegated specimens.</p>
+            <a href="../shop/shop.html?category=exclusive" class="cat-link-btn">Shop Exclusive &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../home/home.html" class="brand-logo">
+            <div class="brand-icon">
+              <img src="../assets/images/apsara.png" alt="Apsara Flower Shop Logo" class="brand-logo-img">
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">APSARA</span>
+              <span class="brand-subtitle">FLOWER SHOP</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Cultivating serene spaces with healthy, sustainably grown botanical treasures and premium indoor houseplants since 2018.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../shop/shop.html">Shop Catalog</a></li>
+            <li><a href="category.html">Plant Categories</a></li>
+            <li><a href="../faq/faq.html">Plant FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="../faq/faq.html">Care Guides</a></li>
+            <li><a href="../contact/contact.html">Store Help</a></li>
+            <li><a href="../about/about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Newsletter</h4>
+          <p style="font-size: 0.88rem; color: #94a3b8; line-height: 1.5;">Join for discounts and plant tips.</p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed!'); this.reset();">
+            <input type="email" placeholder="Email" class="newsletter-input" required>
+            <button type="submit" class="newsletter-btn">Go</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Apsara Flower Shop. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../components/header.js"></script>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/shared.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

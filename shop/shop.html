@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Apsara Flower Shop</title>
+  <meta name="description" content="Browse our luxury collection of potted houseplants, bonsai, succulents, and fresh flowers at Apsara Flower Shop.">
+  
+  <!-- Global & Page Stylesheets -->
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Header (Auto-rendered from components/header.js) -->
+  <header id="site-header" data-active="shop"></header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Toolbar & Status Controls (Matches Screenshot) -->
+      <section class="shop-controls-bar" aria-label="Shop controls">
+        <div class="results-count" id="results-count-text">
+          Showing 1–9 of 12 results
+        </div>
+
+        <div class="controls-right">
+          <!-- View switcher icons (2 cols, 3 cols, 4 cols) -->
+          <div class="grid-switcher" role="group" aria-label="Grid column selector">
+            <button class="grid-btn" data-cols="2" title="2 Columns View" id="grid-btn-2" aria-label="2 Columns View">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
+                <rect x="3.5" y="2" width="4.2" height="14" rx="2.1"/>
+                <rect x="10.3" y="2" width="4.2" height="14" rx="2.1"/>
+              </svg>
+            </button>
+            <button class="grid-btn active" data-cols="3" title="3 Columns View" id="grid-btn-3" aria-label="3 Columns View">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
+                <rect x="2.5" y="2" width="3" height="14" rx="1.5"/>
+                <rect x="7.5" y="2" width="3" height="14" rx="1.5"/>
+                <rect x="12.5" y="2" width="3" height="14" rx="1.5"/>
+              </svg>
+            </button>
+            <button class="grid-btn" data-cols="4" title="4 Columns View" id="grid-btn-4" aria-label="4 Columns View">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
+                <rect x="1.8" y="2" width="2.4" height="14" rx="1.2"/>
+                <rect x="5.6" y="2" width="2.4" height="14" rx="1.2"/>
+                <rect x="9.4" y="2" width="2.4" height="14" rx="1.2"/>
+                <rect x="13.2" y="2" width="2.4" height="14" rx="1.2"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Per Page Select Dropdown -->
+          <div class="filter-dropdown">
+            <select class="filter-select" id="per-page-select" aria-label="Select number of products">
+              <option value="9" selected>9 Products</option>
+              <option value="12">12 Products</option>
+              <option value="all">All Products</option>
+            </select>
+            <span class="select-arrow" aria-hidden="true">
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="currentColor">
+                <path d="M4.5 5.5L0.5 0.5H8.5L4.5 5.5Z"/>
+              </svg>
+            </span>
+          </div>
+
+          <!-- Sorting Select Dropdown -->
+          <div class="filter-dropdown">
+            <select class="filter-select" id="sort-select" aria-label="Sort products">
+              <option value="default" selected>Default</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Top Rated</option>
+              <option value="name">Product Name (A-Z)</option>
+            </select>
+            <span class="select-arrow" aria-hidden="true">
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="currentColor">
+                <path d="M4.5 5.5L0.5 0.5H8.5L4.5 5.5Z"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category Filter Pills / Cards (Matches Screenshot) -->
+      <section class="category-filter-row" aria-label="Categories filter" id="category-filter-container">
+        <button class="cat-filter-card active" data-cat="all" id="cat-card-all">
+          <div class="cat-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.5" y="2.5" width="6.5" height="6.5" rx="1.8"/>
+              <rect x="13" y="2.5" width="6.5" height="6.5" rx="1.8"/>
+              <rect x="2.5" y="13" width="6.5" height="6.5" rx="1.8"/>
+              <rect x="13" y="13" width="6.5" height="6.5" rx="1.8"/>
+            </svg>
+          </div>
+          <div class="cat-info">
+            <span class="cat-name">All Products</span>
+            <span class="cat-count">12 Items</span>
+          </div>
+        </button>
+
+        <button class="cat-filter-card" data-cat="flower" id="cat-card-flower">
+          <div class="cat-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>
+            </svg>
+          </div>
+          <div class="cat-info">
+            <span class="cat-name">Flower</span>
+            <span class="cat-count">4 Items</span>
+          </div>
+        </button>
+
+        <button class="cat-filter-card" data-cat="bonsai" id="cat-card-bonsai">
+          <div class="cat-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>
+            </svg>
+          </div>
+          <div class="cat-info">
+            <span class="cat-name">Bonsai</span>
+            <span class="cat-count">3 Items</span>
+          </div>
+        </button>
+
+        <button class="cat-filter-card" data-cat="cactus" id="cat-card-cactus">
+          <div class="cat-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>
+            </svg>
+          </div>
+          <div class="cat-info">
+            <span class="cat-name">Cactus</span>
+            <span class="cat-count">3 Items</span>
+          </div>
+        </button>
+
+        <button class="cat-filter-card" data-cat="exclusive" id="cat-card-exclusive">
+          <div class="cat-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>
+            </svg>
+          </div>
+          <div class="cat-info">
+            <span class="cat-name">Exclusive</span>
+            <span class="cat-count">2 Items</span>
+          </div>
+        </button>
+      </section>
+
+      <!-- Products Grid (3 columns by default, switchable to 2 or 4) -->
+      <section class="shop-products-grid grid-3" id="shop-products-grid" aria-label="Product list">
+        <!-- Injected via shop/script.js -->
+      </section>
+
+      <!-- Pagination -->
+      <div class="pagination-wrap" id="shop-pagination">
+        <button class="page-btn active" data-page="1">1</button>
+        <button class="page-btn" data-page="2">2</button>
+        <button class="page-btn" data-page="next" title="Next Page">→</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../home/home.html" class="brand-logo">
+            <div class="brand-icon">
+              <img src="../assets/images/apsara.png" alt="Apsara Flower Shop Logo" class="brand-logo-img">
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">APSARA</span>
+              <span class="brand-subtitle">FLOWER SHOP</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Cultivating serene spaces with healthy, sustainably grown botanical treasures and premium indoor houseplants since 2018.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" title="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="social-link" title="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="social-link" title="Pinterest"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12c.5 2.5 1.5 5 1.5 7"/><path d="M10.5 8.5c1.5-1 4.5-.5 4.5 2.5 0 2.5-2 4-3.5 4-1 0-1.5-.7-1.5-1.5 0-.5.2-1.3.5-2"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="../category/category.html">Plant Categories</a></li>
+            <li><a href="../blog/blog.html">Plant Care Blog</a></li>
+            <li><a href="../about/about.html">About Our Story</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Customer Help</h4>
+          <ul class="footer-links">
+            <li><a href="../faq/faq.html">Plant Care FAQ</a></li>
+            <li><a href="../contact/contact.html">Store Location</a></li>
+            <li><a href="../faq/faq.html#shipping">Shipping & Delivery</a></li>
+            <li><a href="../faq/faq.html#returns">30-Day Guarantee</a></li>
+            <li><a href="../contact/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Join Our Newsletter</h4>
+          <p style="font-size: 0.88rem; color: #94a3b8; line-height: 1.5;">
+            Receive exclusive plant care tips, new arrivals, and 15% off your first botanical order.
+          </p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed to Apsara Newsletter! Check your inbox.'); this.reset();">
+            <input type="email" placeholder="Your email address" class="newsletter-input" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Apsara Flower Shop. All rights reserved. Designed with botanical elegance.</p>
+        <p>100% Guaranteed Fresh & Healthy Delivery</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="modal-backdrop" id="search-modal">
+    <div style="background: white; max-width: 600px; width: 100%; border-radius: 12px; padding: 2rem; position: relative;">
+      <button class="modal-close" onclick="closeSearchModal()">&times;</button>
+      <h3 style="color: #062c27; font-size: 1.35rem; margin-bottom: 1rem;">Search Flora & Plants</h3>
+      <div style="position: relative; margin-bottom: 1.5rem;">
+        <input type="text" id="shop-search-input" placeholder="Type plant name (e.g. Palm, Bonsai, Cactus)..." 
+               style="width: 100%; padding: 0.85rem 1rem; border: 1.5px solid #e2e8f0; border-radius: 8px; font-size: 1rem;">
+      </div>
+      <div id="search-results-list" style="max-height: 300px; overflow-y: auto; display: flex; flex-direction: column; gap: 8px;"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../components/header.js"></script>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/shared.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
